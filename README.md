@@ -1,5 +1,5 @@
-## Your tasks
-Final results demo [Codesandbox Demo](https://codesandbox.io/s/reactjs-challenge-x0o37)
+## Final Results
+[Demo on Codesandbox](https://codesandbox.io/s/reactjs-challenge-x0o37)
 
 # react.js coding challenge
 
