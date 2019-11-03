@@ -1,0 +1,20 @@
+$primary: #4285F4;
+$warning: #F4B400;
+$danger: #DB4437;
+$success: #0F9D58;
+
+$screen-sm-max: 576px;
+
+h1, h2, h3, h4, h5, h6, a, p, span {
+  font-family: 'Roboto', sans-serif;
+}
+
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+      @content;
+  }
+}
+
+.container {
+  margin: 2rem;
+}

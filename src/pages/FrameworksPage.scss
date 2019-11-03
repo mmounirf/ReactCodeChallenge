@@ -1,0 +1,76 @@
+@import '../styles';
+
+.frameworks {
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin: 2rem 0;
+    @include sm {
+      grid-template-columns: 1fr;
+    }
+    span {
+      background-color: $warning;
+    }
+  }
+
+  &__no-results {
+    display: flex;
+    background-color: $danger;
+    margin-top: 2rem;
+    border-radius: 2px;
+    padding: 1rem;
+    color: #FFF;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__search {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 2px solid $primary;
+    padding: 1rem;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__no-results {
+    display: flex;
+  }
+
+  .framework {
+    border-radius: 2px;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    position: relative;
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    > p {
+      margin: 0;
+    }
+
+    &__title {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: .5rem;
+      background-color: $primary;
+      color: #FFF;
+      border-radius: 2px 0 0 0;
+    }
+
+    &__description {
+      padding-top: 1.5rem;
+    }
+  }
+}

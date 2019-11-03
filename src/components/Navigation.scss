@@ -1,0 +1,46 @@
+@import "../styles";
+
+.navigation {
+  margin: 0 auto;
+  &__container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+  &__item {
+    a {
+      display: block;
+      position: relative;
+      padding: 15px;
+      text-decoration: none;
+      color: $primary;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0 10px;
+
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: $primary;
+        height: 2px;
+        transition: width .5s;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+
+      &.active:after {
+        width: 100%;
+      }
+    }
+  }
+}
+

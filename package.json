@@ -1,0 +1,25 @@
+{
+  "name": "reactjs-challenge",
+  "version": "1.0.0",
+  "description": "Camunda ReactJS challenge",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "bpmn-js": "5.0.4",
+    "html-react-parser": "0.9.1",
+    "mobx": "5.14.2",
+    "mobx-react": "6.1.4",
+    "node-sass": "4.13.0",
+    "react": "16.10.2",
+    "react-dom": "16.10.2",
+    "react-router": "5.0.1",
+    "react-router-dom": "5.0.1",
+    "react-scripts": "3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  }
+}
